@@ -1,7 +1,7 @@
 {
   "name": "Snowed In",
   "short_name": "SnowedIn",
-  "description": "A neighborhood social app for snow days.",
+  "description": "A neighborhood social app for snow lodge.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
