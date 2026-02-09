@@ -31,36 +31,7 @@ import {
 import { generateCaptionSuggestion, getNeighborResponse } from './services/geminiService';
 
 const INITIAL_USERS: User[] = [
-  { id: '1', name: 'Charlie', avatar: 'https://picsum.photos/id/64/150/150', password: '123', snowNumber: { apartment: 1, room: 1, bed: 1 } },
-  { id: '2', name: 'Sarah', avatar: 'https://picsum.photos/id/65/150/150', password: '123', snowNumber: { apartment: 2, room: 5, bed: 2 } },
-  { id: '3', name: 'Mike', avatar: 'https://picsum.photos/id/66/150/150', password: '123', snowNumber: { apartment: 8, room: 3, bed: 1 } },
-];
 
-const INITIAL_POSTS: Post[] = [
-  { 
-    id: 'p1', 
-    userId: '2', 
-    userName: 'Sarah', 
-    userSnowNumber: 'Apt 2 - R5 - B2', 
-    imageUrl: 'https://picsum.photos/id/862/800/800', 
-    caption: 'Look at the drifts outside my window! ❄️', 
-    timestamp: Date.now() - 3600000, 
-    likes: 12,
-    comments: [
-      { id: 'c1', userId: '3', userName: 'Mike', text: 'Stay warm!', timestamp: Date.now() - 1800000 }
-    ]
-  },
-  { 
-    id: 'p2', 
-    userId: '3', 
-    userName: 'Mike', 
-    userSnowNumber: 'Apt 8 - R3 - B1', 
-    imageUrl: 'https://picsum.photos/id/342/800/800', 
-    caption: 'Hot cocoa and a book. Best way to be snowed in.', 
-    timestamp: Date.now() - 7200000, 
-    likes: 8,
-    comments: []
-  },
 ];
 
 const App: React.FC = () => {
